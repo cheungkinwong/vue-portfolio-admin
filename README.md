@@ -79,6 +79,5 @@ MIT License
 * [Vue 3](https://vuejs.org/)
 * [Pinia](https://pinia.vuejs.org/)
 
-```
 
 
