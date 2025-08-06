@@ -31,5 +31,6 @@ const links = [
   { label: 'Technical Skills', to: '/technicalskill' },
   { label: 'Hobbies', to: '/hobby' },
   { label: 'Projects', to: '/project' },
+  { label: 'CV', to: '/cv' },
 ]
 </script>

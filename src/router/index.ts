@@ -38,6 +38,8 @@ const routes = [
   { path: '/project/new', component: () => import('@/pages/project/ProjectFormPage.vue'), meta: { requiresAuth: true }},
   { path: '/project/:id/edit', component: () => import('@/pages/project/ProjectFormPage.vue'), meta: { requiresAuth: true }},
 
+   { path: '/cv', component: () => import('@/pages/cv/CVUploadFormPage.vue'), meta: { requiresAuth: true }},
+
 ]
 
 const router = createRouter({

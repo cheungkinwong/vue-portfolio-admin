@@ -12,6 +12,11 @@
           :items-per-page="itemsPerPage"
           :hide-default-footer="store.items.length <= itemsPerPage"
         >
+          <template #item.description="{ item }">
+            <span class="text-truncate">
+              {{ item.description }}
+            </span>
+          </template>
           <template #item.actions="{ item }">
               <div class="text-right">
                 <v-icon icon="edit" @click="$router.push(`/section/${item.id}/edit`)" class="me-2" />
@@ -31,8 +36,6 @@ const itemsPerPage = 10
 const headers = [
   { title: 'Title', value: 'title' },
   { title: 'Description', value: 'description' },
-  { title: 'Image', value: 'image', sortable: false },
-  { title: 'Alt Text', value: 'altText' },
   { title: '', value: 'actions', sortable: false },
 ]
 

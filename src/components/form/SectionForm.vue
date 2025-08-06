@@ -6,12 +6,10 @@
       label="Image"
       accept="image/*"
       v-model="imageFile"
-      prepend-icon="mdi-image"
     />
     <v-text-field label="Alt Text" v-model="altText" />
-    <v-btn type="submit" color="primary" class="float-end mb-4">Update</v-btn>
+    <v-btn type="submit" color="secondary" class="float-end mb-4">Update</v-btn>
     <v-btn @click="onCancel">Cancel</v-btn>
-
   </v-form>
 </template>
 

@@ -7,7 +7,6 @@
       label="Image"
       accept="image/*"
       v-model="imageFile"
-      prepend-icon="mdi-image"
     />
     <v-text-field label="Alt Text" v-model="altText" />
     <div class="d-flex justify-end">

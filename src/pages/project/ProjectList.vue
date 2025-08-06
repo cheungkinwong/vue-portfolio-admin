@@ -14,6 +14,17 @@
           :items-per-page="itemsPerPage"
           :hide-default-footer="store.items.length <= itemsPerPage"
         >
+          <template #item.description="{ item }">
+            <span class="text-truncate">
+              {{ item.description }}
+            </span>
+          </template>
+          <template #item.link="{ item }">
+            <span class="text-truncate">
+              {{ item.link }}
+            </span>
+          </template>
+
           <template #item.actions="{ item }">
           <div class="text-right">
               <v-icon icon="edit" @click="$router.push(`/project/${item.id}/edit`)" class="me-2" />
@@ -37,10 +48,8 @@ onMounted(() => store.fetchAll())
 
 const headers = [
   { title: 'Name', value: 'name' },
-  { title: 'Description', value: 'description' },
-  { title: 'Link', value: 'link' },
-  { title: 'Image', value: 'image', sortable: false },
-  { title: 'Alt Text', value: 'altText' },
+  { title: 'Description', value: 'description'},
+  { title: 'Link', value: 'link'},
   { title: '', value: 'actions', sortable: false },
 ]
 </script>
