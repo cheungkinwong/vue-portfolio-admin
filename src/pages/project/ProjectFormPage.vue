@@ -41,7 +41,6 @@ onMounted(async () => {
 })
 
 async function handleSubmit(data: { model: Project; file: File | null; altText: string }) {
-  console.log("handleSubmit", data)
   try {
     const { model, file, altText } = data
 
@@ -61,7 +60,7 @@ async function handleSubmit(data: { model: Project; file: File | null; altText: 
       createdProject.altText = uploadResult.altText
 
       await store.update(createdProject.id, createdProject)
-    } else if (!model.id) {
+    } else {
       await store.update(createdProject.id, createdProject)
     }
 

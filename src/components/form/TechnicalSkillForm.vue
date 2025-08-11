@@ -2,7 +2,7 @@
   <v-form @submit.prevent="$emit('submit')">
     <v-text-field label="Name" v-model="model.name" required />
     <div class="d-flex justify-end">
-      <v-btn type="submit" color="secondary" class="mr-2">{{ isEdit ? 'Edit' : 'Create' }}</v-btn>
+      <v-btn type="submit" color="primary" class="mr-2">{{ isEdit ? 'Edit' : 'Create' }}</v-btn>
       <v-btn @click="$emit('cancel')">Cancel</v-btn>
     </div>
   </v-form>

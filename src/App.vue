@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <NavigationBar />
+    <NavigationBar color="primary-dark"/>
     <v-main>
       <v-container class="fill-height d-flex flex-column justify-center align-center pa-0 ">
         <RouterView/>

@@ -2,7 +2,7 @@
   <v-container>
     <div class="d-flex align-center mb-4">
       <h2>Soft Skills</h2>
-      <v-btn icon="add" class="ml-3" @click="$router.push('/softskill/new')" />
+      <v-btn icon="add" density="compact" class="ml-3" @click="$router.push('/softskill/new')" />
     </div>
     <v-alert v-if="store.error" type="error" class="mb-4">{{ store.error }}</v-alert>
         <v-card>

@@ -42,3 +42,13 @@ const headers = [
 
 store.fetchAll()
 </script>
+<style scoped>
+.text-truncate {
+  display: inline-block;
+  max-width: 600px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+</style>

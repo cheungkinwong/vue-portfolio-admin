@@ -9,10 +9,7 @@ declare module 'vuetify' {
       'primary-dark': string
       'primary-contrast': string
 
-      secondary: string
-      'secondary-light': string
-      'secondary-dark': string
-      'secondary-contrast': string
+      background: string // Optional background color  
     }
   }
 }

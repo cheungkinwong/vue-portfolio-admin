@@ -53,3 +53,14 @@ const headers = [
   { title: '', value: 'actions', sortable: false },
 ]
 </script>
+
+<style scoped>
+.text-truncate {
+  display: inline-block;
+  max-width: 300px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+</style>

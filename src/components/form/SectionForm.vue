@@ -8,8 +8,10 @@
       v-model="imageFile"
     />
     <v-text-field label="Alt Text" v-model="altText" />
-    <v-btn type="submit" color="secondary" class="float-end mb-4">Update</v-btn>
-    <v-btn @click="onCancel">Cancel</v-btn>
+    <div class="d-flex justify-end">
+      <v-btn type="submit" color="primary" class="mr-2">Edit</v-btn>
+      <v-btn @click="onCancel">Cancel</v-btn>
+    </div>
   </v-form>
 </template>
 
