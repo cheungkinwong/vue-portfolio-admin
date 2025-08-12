@@ -10,7 +10,8 @@
         </p>
         <p class="text-body-1 mb-2">
           You can use the following credentials:<br>
-          reader / reader123, admin / admin123. 
+          reader / reader123 <br>
+          If you're interested in the admin client, please contact me for the credentials.
         </p>
         <p class="text-body-1 mb-2">
           Due to the limitations of my free web hosting service, HTTPS is currently not available.
