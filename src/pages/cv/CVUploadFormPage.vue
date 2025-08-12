@@ -43,7 +43,7 @@ async function handleUpload() {
   try {
     const path = await cvStore.uploadCV(file.value)
     successMessage.value = `CV uploaded successfully to ${path}`
-    router.push('/admin') // Or wherever you want to redirect after upload
+    router.push('/cv') 
   } catch (err) {
     successMessage.value = null
   }
